@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Test Suite]]]">
+  <test thread-count="5" name="GrandAmerica_au(failed)(failed)(failed)">
+    <parameter name="Application" value="GrandAmerica_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="3"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- GrandAmerica_au(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Test Suite]]] -->

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite" parallel="none" preserve-order="true">
+
+
+	<test name="Contiki_au" >
+		<parameter name="Application" value="Contiki_au"  />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="Contiki_nz" >
+		<parameter name="Application" value="Contiki_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Contiki_uk" >
+		<parameter name="Application" value="Contiki_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Contiki_us" >
+		<parameter name="Application" value="Contiki_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+	<test name="GAdventures_au" >
+		<parameter name="Application" value="GAdventures_au" />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="GAdventures_nz" >
+		<parameter name="Application" value="GAdventures_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="GAdventures_uk" >
+		<parameter name="Application" value="GAdventures_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="GAdventures_us" >
+		<parameter name="Application" value="GAdventures_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	<test name="Dragoman_au" >
+		<parameter name="Application" value="Dragoman_au" />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="Dragoman_nz" >
+		<parameter name="Application" value="Dragoman_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Dragoman_uk" >
+		<parameter name="Application" value="Dragoman_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Dragoman_us" >
+		<parameter name="Application" value="Dragoman_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="1Source_au" >
+		<parameter name="Application" value="1Source_au" />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="1Source_nz" >
+		<parameter name="Application" value="1Source_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="1Source_uk" >
+		<parameter name="Application" value="1Source_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="1Source_us" >
+		<parameter name="Application" value="1Source_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+	<test name="TrekAmerica_au" >
+		<parameter name="Application" value="TrekAmerica_au" />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="TrekAmerica_nz" >
+		<parameter name="Application" value="TrekAmerica_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="TrekAmerica_uk" >
+		<parameter name="Application" value="TrekAmerica_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="TrekAmerica_us" >
+		<parameter name="Application" value="TrekAmerica_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+	<test name="GrandAmerica_au" >
+		<parameter name="Application" value="GrandAmerica_au" />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="GrandAmerica_nz" >
+		<parameter name="Application" value="GrandAmerica_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="GrandAmerica_uk" >
+		<parameter name="Application" value="GrandAmerica_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="GrandAmerica_us" >
+		<parameter name="Application" value="GrandAmerica_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+	<test name="Radical_au" >
+		<parameter name="Application" value="Radical_au" />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="Radical_nz" >
+		<parameter name="Application" value="Radical_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Radical_uk" >
+		<parameter name="Application" value="Radical_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Radical_us" >
+		<parameter name="Application" value="Radical_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+	
+
+</suite>

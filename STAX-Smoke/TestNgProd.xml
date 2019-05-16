@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite" parallel="none" preserve-order="true">
+
+	
+	<test name="Contiki_us" >
+		<parameter name="Application" value="Contiki_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	<test name="GAdventures_us" >
+		<parameter name="Application" value="GAdventures_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	<test name="Dragoman_us" >
+		<parameter name="Application" value="Dragoman_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	<test name="1Source_us" >
+		<parameter name="Application" value="1Source_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	<test name="TrekAmerica_us" >
+		<parameter name="Application" value="TrekAmerica_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	<test name="GrandAmerica_us" >
+		<parameter name="Application" value="GrandAmerica_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+
+	
+	
+	<test name="Radical_us" >
+		<parameter name="Application" value="Radical_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	
+
+</suite>

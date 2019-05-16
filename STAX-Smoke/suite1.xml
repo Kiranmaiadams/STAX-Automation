@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite_Contiki" parallel="none" preserve-order="true">
+
+
+	<test name="Contiki_au" >
+		<parameter name="Application" value="Contiki_au"  />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+
+	<test name="Contiki_nz" >
+		<parameter name="Application" value="Contiki_nz" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Contiki_uk" >
+		<parameter name="Application" value="Contiki_uk" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="Contiki_us" >
+		<parameter name="Application" value="Contiki_us" />
+
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
+
+   </suite>

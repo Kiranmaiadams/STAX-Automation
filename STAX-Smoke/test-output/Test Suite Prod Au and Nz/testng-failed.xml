@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite prod au and nz]">
+  <test thread-count="5" name="1Source_au(failed)">
+    <parameter name="Application" value="1Source_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="2 3 4"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- 1Source_au(failed) -->
+  <test thread-count="5" name="1Source_nz(failed)">
+    <parameter name="Application" value="1Source_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="2 3 4"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- 1Source_nz(failed) -->
+</suite> <!-- Failed suite [Test Suite prod au and nz] -->
