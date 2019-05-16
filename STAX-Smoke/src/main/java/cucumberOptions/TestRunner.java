@@ -38,7 +38,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("useAutomationExtension", false);
-		//options.addArguments("--headless");
+		options.addArguments("--headless");
 		STAXDriver = new ChromeDriver(options);
 		STAXDriver.manage().window().maximize();
 		STAXDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
