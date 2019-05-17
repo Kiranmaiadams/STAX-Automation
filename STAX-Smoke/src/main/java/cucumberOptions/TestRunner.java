@@ -33,7 +33,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	@BeforeTest(alwaysRun=true)
 	@Parameters("Application")
 	public static synchronized void Test(String Application) throws IOException, InterruptedException {
-		File file = new File("C:\\Automation\\Drivers\\chromedriver.exe");
+		File file = new File("Drivers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 
 		ChromeOptions options = new ChromeOptions();
