@@ -21,7 +21,7 @@ import cucumber.api.java.Before;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @Test(threadPoolSize = 100)
-@CucumberOptions(features = "src/test/java/TestCaseResources/4-Email Us.feature", glue = "StepDefinitions", plugin = {
+@CucumberOptions(features = "src/test/java/TestCaseResources", glue = "StepDefinitions", plugin = {
 		"pretty",  "json:target/cucumber-report/cucumber.json" })
 
 public class TestRunner extends AbstractTestNGCucumberTests {

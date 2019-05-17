@@ -11,6 +11,12 @@
 		</classes>
 	</test>
 
+<test name="GrandAmerica_au" >
+		<parameter name="Application" value="GrandAmerica_au" />
+		<classes>
+			<class name="cucumberOptions.TestRunner"></class>
+		</classes>
+	</test>
 
 	<test name="Contiki_nz" >
 		<parameter name="Application" value="Contiki_nz" />
