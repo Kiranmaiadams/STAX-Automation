@@ -98,44 +98,26 @@ public class HomePageImpl extends TestRunner implements HomePage {
 		System.out.println(obtainedList);
 		System.out.println(obtainedList1);
 
-		/*
-		 * for(int i=1; i<=a && i<=b; i++) {
-		 * System.out.println(elementList.get(i).getText());
-		 * System.out.println(elementList1.get(i).getText()); }
-		 */
-		// if (SortOption.equalsIgnoreCase("Price (Low-High)") ||
-		// SortOption.equalsIgnoreCase("Price (High-Low)")) {
+		
+		if (SortOption.equalsIgnoreCase("Price (Low-High)"))
+		{
 		for (WebElement we : elementList) {
 
 			String value = we.getText();
 			String Testvalue = we.findElement(By.xpath(daysXpath)).getText();
-
-			// System.out.println(Testvalue);
-
-			/*
-			 * WebElement parent = we.findElement(By.xpath("./../../../../.."));
-			 * 
-			 * String id = parent.getAttribute("class"); //String Dayss =
-			 * "//*[@class='"+id+"']/span[@class='trip-days']"; //
-			 * System.out.println(STAXDriver.findElement(By.xpath(Dayss)).getText()); String
-			 * intValue = value.replaceAll("[^0-9]", ""); int Price =
-			 * Integer.parseInt(intValue); obtainedList.add(Price);
-			 * System.out.println(intValue);
-			 */
+			
+			
 		}
-		// }
-		// ArrayList<Integer> sortedList = new ArrayList<>();
-		// for (Integer s : obtainedList) {
-		// sortedList.add(s);
-		// }
-		// Sort in Ascending Order (Price High-Low)
-		// Collections.sort(sortedList);
-		// System.out.println(sortedList);
-
-		// Sort in Descending Order (Price High-Low)
-		// Collections.sort(sortedList, Collections.reverseOrder());
-		// System.out.println(sortedList);
-
+		int arr1[] = null;
+		int arr2[] = null;
+		for(int x=0;x<arr1.length; x++) {
+			
+			for(int j=0;j<arr2.length; j++) {
+				int result= arr1[x]/arr2[j];
+			}
+		}
+		
+		}
 	}
 
 	@Override
