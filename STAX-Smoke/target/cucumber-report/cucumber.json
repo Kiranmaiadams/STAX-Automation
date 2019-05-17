@@ -4,362 +4,6 @@
     "elements": [
       {
         "line": 3,
-        "name": "Verify View more functionality",
-        "description": "",
-        "id": "verify-view-more-functionality;verify-view-more-functionality",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 86610765,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Defaults count of results are in displayed initially",
-            "match": {
-              "location": "HomePageDefinitions.defaults_count_of_results_are_in_displayed_initially()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4289245303,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "View more Button is displayed for extra results",
-            "match": {
-              "location": "HomePageDefinitions.view_more_button_is_displayed_for_extra_results()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 75738425,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User should be able to see all the Results after clicking on it",
-            "match": {
-              "location": "HomePageDefinitions.user_should_be_able_to_see_all_the_results_after_clicking_on_it()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4316794472,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User clicks on Reset",
-            "match": {
-              "location": "HomePageDefinitions.user_clicks_on_reset()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 87688372,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Defaults count of results are in displayed initially",
-            "match": {
-              "location": "HomePageDefinitions.defaults_count_of_results_are_in_displayed_initially()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Verify view more functionality",
-    "description": "",
-    "id": "verify-view-more-functionality",
-    "keyword": "Feature",
-    "uri": "1-Verify View More.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 12,
-        "name": "User searches forUnited Kingdom with uni",
-        "description": "",
-        "id": "verify-the-autosearch-complete-function;user-searches-for\u003ccountry\u003e-with-\u003csearchstring\u003e;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 81115883,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User provides uni",
-            "match": {
-              "arguments": [
-                {
-                  "val": "uni",
-                  "offset": 14
-                }
-              ],
-              "location": "HomePageDefinitions.user_provides(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5909604666,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Seletcs the United Kingdom fro the list",
-            "match": {
-              "arguments": [
-                {
-                  "val": "United Kingdom",
-                  "offset": 12
-                }
-              ],
-              "location": "HomePageDefinitions.seletcs_the_fro_the_list(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15316,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Results should be displayed properly",
-            "match": {
-              "location": "HomePageDefinitions.results_should_be_displayed_properly()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6309630485,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "navigate to Previous Page",
-            "match": {
-              "location": "HomePageDefinitions.navigate_to_previous_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "line": 13,
-        "name": "User searches forUnited Arab Emirates with uni",
-        "description": "",
-        "id": "verify-the-autosearch-complete-function;user-searches-for\u003ccountry\u003e-with-\u003csearchstring\u003e;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 162579298,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User provides uni",
-            "match": {
-              "arguments": [
-                {
-                  "val": "uni",
-                  "offset": 14
-                }
-              ],
-              "location": "HomePageDefinitions.user_provides(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5787276802,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Seletcs the United Arab Emirates fro the list",
-            "match": {
-              "arguments": [
-                {
-                  "val": "United Arab Emirates",
-                  "offset": 12
-                }
-              ],
-              "location": "HomePageDefinitions.seletcs_the_fro_the_list(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15681,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Results should be displayed properly",
-            "match": {
-              "location": "HomePageDefinitions.results_should_be_displayed_properly()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5501329595,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "navigate to Previous Page",
-            "match": {
-              "location": "HomePageDefinitions.navigate_to_previous_page()"
-            },
-            "keyword": "And "
-          }
-        ]
-      }
-    ],
-    "name": "Verify the Autosearch complete function",
-    "description": "",
-    "id": "verify-the-autosearch-complete-function",
-    "keyword": "Feature",
-    "uri": "2-Verify AutoSearch.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 13,
-        "name": "User Verifies if the ort order is displayed properly Price (Low-High)",
-        "description": "",
-        "id": "user-verifies-the-sort-order-functionality;user-verifies-if-the-ort-order-is-displayed-properly-\u003csort-option\u003e;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 21359925723,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the Price (Low-High)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (Low-High)",
-                  "offset": 17
-                }
-              ],
-              "location": "HomePageDefinitions.user_selects_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 659066410,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify the Results for Price (Low-High)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (Low-High)",
-                  "offset": 23
-                }
-              ],
-              "location": "HomePageDefinitions.verify_the_results_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "User Verifies if the ort order is displayed properly Price (High-Low)",
-        "description": "",
-        "id": "user-verifies-the-sort-order-functionality;user-verifies-if-the-ort-order-is-displayed-properly-\u003csort-option\u003e;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 21338920964,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the Price (High-Low)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (High-Low)",
-                  "offset": 17
-                }
-              ],
-              "location": "HomePageDefinitions.user_selects_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 634273070,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify the Results for Price (High-Low)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (High-Low)",
-                  "offset": 23
-                }
-              ],
-              "location": "HomePageDefinitions.verify_the_results_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "User Verifies the Sort Order Functionality",
-    "description": "",
-    "id": "user-verifies-the-sort-order-functionality",
-    "keyword": "Feature",
-    "uri": "3-Sort Order Test.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
         "name": "Verify email is functionality",
         "description": "",
         "id": "verify-email-us-functionality;verify-email-is-functionality",
@@ -368,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5506823384,
+              "duration": 6088960713,
               "status": "passed"
             },
             "line": 5,
@@ -380,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 6380333879,
+              "duration": 7283412370,
               "status": "passed"
             },
             "line": 6,
@@ -392,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 296455240,
+              "duration": 816560353,
               "status": "passed"
             },
             "line": 7,
@@ -404,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 82672669,
+              "duration": 98135868,
               "status": "passed"
             },
             "line": 8,
@@ -416,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 16045,
+              "duration": 22245,
               "status": "passed"
             },
             "line": 9,
@@ -433,62 +77,6 @@
     "description": "",
     "id": "verify-email-us-functionality",
     "keyword": "Feature",
-    "uri": "4-Email Us.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
-        "name": "Verify whether the user is able to make a booking",
-        "description": "",
-        "id": "verification-of-book-now-functionality;verify-whether-the-user-is-able-to-make-a-booking",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6123963784,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User clicks on Book Now",
-            "match": {
-              "location": "BookNowDefinitions.user_clicks_on_book_now()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 32821,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Verify Cost Per Traveller",
-            "match": {
-              "location": "BookNowDefinitions.verify_cost_per_traveller()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8022,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Verify Max number of Passengers Count",
-            "match": {
-              "location": "BookNowDefinitions.verify_max_number_of_passengers_count()"
-            },
-            "keyword": "And "
-          }
-        ]
-      }
-    ],
-    "name": "Verification Of Book Now functionality",
-    "description": "",
-    "id": "verification-of-book-now-functionality",
-    "keyword": "Feature",
-    "uri": "5-BookNow.feature"
+    "uri": "src/test/java/TestCaseResources/4-Email Us.feature"
   }
 ]

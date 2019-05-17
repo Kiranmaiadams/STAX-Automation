@@ -1,0 +1,8 @@
+StepDefinitions\ToursDefinitions.class
+StepDefinitions\Testtt.class
+StepDefinitions\BookNowDefinitions.class
+CustomReport\CustomTestNGReporter.class
+STAX_Smoke\AppTest.class
+StepDefinitions\EmailUsDefinitions.class
+StepDefinitions\HomePageDefinitions.class
+StepDefinitions\LoginDefinitions.class

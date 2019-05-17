@@ -21,7 +21,7 @@ import cucumber.api.java.Before;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @Test(threadPoolSize = 100)
-@CucumberOptions(features = "src/test/java/TestCaseResources", glue = "StepDefinitions", plugin = {
+@CucumberOptions(features = "src/test/java/TestCaseResources/4-Email Us.feature", glue = "StepDefinitions", plugin = {
 		"pretty", "html:target/generated-report", "json:target/cucumber-report/cucumber.json" })
 
 public class TestRunner extends AbstractTestNGCucumberTests {
@@ -38,16 +38,16 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("useAutomationExtension", false);
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		STAXDriver = new ChromeDriver(options);
 		STAXDriver.manage().window().maximize();
 		STAXDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		url = Application;
 
-		//InputStream input = new FileInputStream("utilities.properties");
+		InputStream input = new FileInputStream("utilities.properties");
 		
-		InputStream input = new FileInputStream("UtilitiesProd.properties");
+		//InputStream input = new FileInputStream("UtilitiesProd.properties");
 
 		Properties prop = new Properties();
 

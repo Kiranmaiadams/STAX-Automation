@@ -11,7 +11,7 @@
 		</classes>
 	</test>
 
-
+<!-- 
 	<test name="Contiki_nz" >
 		<parameter name="Application" value="Contiki_nz" />
 
@@ -242,6 +242,6 @@
 		</classes>
 	</test>
 
-	
+	 -->
 
 </suite>
