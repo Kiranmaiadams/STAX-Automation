@@ -43,35 +43,35 @@ formatter.match({
   "location": "ToursDefinitions.user_selects_a_lowest_price_tour()"
 });
 formatter.result({
-  "duration": 6088960713,
+  "duration": 6108055684,
   "status": "passed"
 });
 formatter.match({
   "location": "EmailUsDefinitions.clicks_on_email_us()"
 });
 formatter.result({
-  "duration": 7283412370,
+  "duration": 6690177333,
   "status": "passed"
 });
 formatter.match({
   "location": "EmailUsDefinitions.provides_all_the_details()"
 });
 formatter.result({
-  "duration": 816560353,
+  "duration": 1243134315,
   "status": "passed"
 });
 formatter.match({
   "location": "EmailUsDefinitions.click_on_send_my_email()"
 });
 formatter.result({
-  "duration": 98135868,
+  "duration": 96008005,
   "status": "passed"
 });
 formatter.match({
   "location": "EmailUsDefinitions.an_email_will_be_sent()"
 });
 formatter.result({
-  "duration": 22245,
+  "duration": 29174,
   "status": "passed"
 });
 });
