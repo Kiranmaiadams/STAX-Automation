@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
+  <test thread-count="5" name="Contiki_au(failed)">
+    <parameter name="Application" value="Contiki_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Contiki_au(failed) -->
+  <test thread-count="5" name="Contiki_nz(failed)">
+    <parameter name="Application" value="Contiki_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Contiki_nz(failed) -->
+  <test thread-count="5" name="Contiki_uk(failed)">
+    <parameter name="Application" value="Contiki_uk"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Contiki_uk(failed) -->
+  <test thread-count="5" name="GAdventures_au(failed)">
+    <parameter name="Application" value="GAdventures_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- GAdventures_au(failed) -->
+  <test thread-count="5" name="GAdventures_nz(failed)">
+    <parameter name="Application" value="GAdventures_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- GAdventures_nz(failed) -->
+  <test thread-count="5" name="GAdventures_uk(failed)">
+    <parameter name="Application" value="GAdventures_uk"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- GAdventures_uk(failed) -->
+  <test thread-count="5" name="Dragoman_au(failed)">
+    <parameter name="Application" value="Dragoman_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Dragoman_au(failed) -->
+  <test thread-count="5" name="Dragoman_nz(failed)">
+    <parameter name="Application" value="Dragoman_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Dragoman_nz(failed) -->
+  <test thread-count="5" name="Dragoman_uk(failed)">
+    <parameter name="Application" value="Dragoman_uk"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Dragoman_uk(failed) -->
+  <test thread-count="5" name="1Source_au(failed)">
+    <parameter name="Application" value="1Source_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- 1Source_au(failed) -->
+  <test thread-count="5" name="1Source_nz(failed)">
+    <parameter name="Application" value="1Source_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- 1Source_nz(failed) -->
+  <test thread-count="5" name="1Source_uk(failed)">
+    <parameter name="Application" value="1Source_uk"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- 1Source_uk(failed) -->
+  <test thread-count="5" name="TrekAmerica_au(failed)">
+    <parameter name="Application" value="TrekAmerica_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- TrekAmerica_au(failed) -->
+  <test thread-count="5" name="TrekAmerica_nz(failed)">
+    <parameter name="Application" value="TrekAmerica_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- TrekAmerica_nz(failed) -->
+  <test thread-count="5" name="TrekAmerica_us(failed)">
+    <parameter name="Application" value="TrekAmerica_us"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- TrekAmerica_us(failed) -->
+  <test thread-count="5" name="GrandAmerica_au(failed)">
+    <parameter name="Application" value="GrandAmerica_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- GrandAmerica_au(failed) -->
+  <test thread-count="5" name="GrandAmerica_nz(failed)">
+    <parameter name="Application" value="GrandAmerica_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- GrandAmerica_nz(failed) -->
+  <test thread-count="5" name="GrandAmerica_uk(failed)">
+    <parameter name="Application" value="GrandAmerica_uk"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- GrandAmerica_uk(failed) -->
+  <test thread-count="5" name="Radical_au(failed)">
+    <parameter name="Application" value="Radical_au"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Radical_au(failed) -->
+  <test thread-count="5" name="Radical_nz(failed)">
+    <parameter name="Application" value="Radical_nz"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Radical_nz(failed) -->
+  <test thread-count="5" name="Radical_uk(failed)">
+    <parameter name="Application" value="Radical_uk"/>
+    <classes>
+      <class name="cucumberOptions.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="Test"/>
+          <include name="feature" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cucumberOptions.TestRunner -->
+    </classes>
+  </test> <!-- Radical_uk(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

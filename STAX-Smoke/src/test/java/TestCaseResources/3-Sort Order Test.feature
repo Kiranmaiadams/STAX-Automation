@@ -12,9 +12,8 @@ Examples:
 |Sort Option|
 |Price (Low-High)|
 |Price (High-Low)|
-#|Duration(Lowest)|
-#|Price/Day(Low-High)|
-#|Price/Day(High-Low)|
-
+|Price/Day(Low-High)|
+|Price/Day(High-Low)|
+|Duration(Lowest)|
 
 

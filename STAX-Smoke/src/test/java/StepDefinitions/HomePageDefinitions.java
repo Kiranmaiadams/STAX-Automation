@@ -52,6 +52,13 @@ public class HomePageDefinitions {
 	@Given("^User Selects the Tours with Promotions$")
     public void user_selects_the_tours_with_promotions() throws Throwable {
         HomeL.SelectToursWithPromotions();
+        Thread.sleep(2000);
+    }
+	
+	@And("^Click on Reset Filters$")
+    public void click_on_reset_filters() throws Throwable {
+        HomeL.ClickOnResetFilters();
+        Thread.sleep(8000);
     }
 
     @Then("^Only Tours with Promotions are displayed$")
@@ -68,8 +75,13 @@ public class HomePageDefinitions {
 
 	@Then("^Verify the Results for (.+)$")
 	public void verify_the_results_for(String sortoption) throws Throwable {
+		Thread.sleep(3000);
+		if(sortoption.equalsIgnoreCase("Price (Low-High)")||sortoption.equalsIgnoreCase("Price (High-Low)")) {
 		Home.VerifySortResults(sortoption);
-		// Home.VerifySortResultsPerDay(sortoption);
+		}
+		else {
+		Home.VerifySortResultsPerDay(sortoption);
+		}
 	}
 
 	@Given("^Defaults count of results are in displayed initially$")
@@ -105,15 +117,24 @@ public class HomePageDefinitions {
 		// Thread.sleep(20000);
 
 	}
+	
+
+    @Given("^User clicks on Reset Filter$")
+    public void user_clicks_on_reset_filter() throws Throwable {
+       
+    }
+	
+	
+	
 
 	@And("^navigate to Previous Page$")
 	public void navigate_to_previous_page() throws Throwable {
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		basic.navigateToPreviousPage();
 	}
 
-	@And("^Seletcs the (.+) fro the list$")
-	public void seletcs_the_fro_the_list(String country) throws Throwable {
+	@And("^Selects the (.+) from the list$")
+	public void selects_the_from_the_list(String country) throws Throwable {
 		Thread.sleep(5000);
 		Home.userSearchesCountryFromAutoSearch(country);
 	}

@@ -17,18 +17,14 @@ import org.testng.Assert;
 
 import Interfaces.HomePage;
 import cucumberOptions.TestRunner;
+import javafx.scene.control.SplitPane.Divider;
 
 public class HomePageImpl extends TestRunner implements HomePage {
 
 	public String SelectSortOption(String SortOption) throws InterruptedException {
 		Thread.sleep(10000);
 		STAXDriver.findElement(By.id("sortSelect")).sendKeys(SortOption);
-		Thread.sleep(5000);
-		/*
-		 * String OptionXpath = "//*[@id='sortSelect']/option[contains(.,'" + SortOption
-		 * + "')]"; //*[@id="sortSelect"]/option[1]
-		 * STAXDriver.findElement(By.xpath(OptionXpath)).click();
-		 */
+		Thread.sleep(10000);
 		return SortOption;
 	}
 
@@ -36,7 +32,7 @@ public class HomePageImpl extends TestRunner implements HomePage {
 	public void VerifySortResults(String SortOption) {
 		ArrayList<Integer> obtainedList = new ArrayList<>();
 
-		String priceXpath = "//span[contains(@class,'trip-price-inner')]";
+		String priceXpath = "//*[contains(@class,'trip-price-inner ng-binding')]";
 		STAXDriver.findElement(By.xpath(priceXpath)).click();
 		List<WebElement> elementList = STAXDriver.findElements(By.xpath(priceXpath));
 
@@ -46,78 +42,152 @@ public class HomePageImpl extends TestRunner implements HomePage {
 				String intValue = value.replaceAll("[^0-9]", "");
 				int Price = Integer.parseInt(intValue);
 				obtainedList.add(Price);
-				System.out.println(intValue);
+				//System.out.println(intValue);
 			}
 		}
 		ArrayList<Integer> sortedList = new ArrayList<>();
 		for (Integer s : obtainedList) {
 			sortedList.add(s);
 		}
-		// Sort in Ascending Order (Price High-Low)
-		Collections.sort(sortedList);
+		
+		System.out.println(obtainedList);
 		System.out.println(sortedList);
-
-		// Sort in Descending Order (Price High-Low)
-		Collections.sort(sortedList, Collections.reverseOrder());
-		System.out.println(sortedList);
+		
+		if(SortOption.equalsIgnoreCase("Price (Low-High)")) {			
+			 Collections.sort(sortedList);
+				if(obtainedList.equals(sortedList)) {
+					System.out.println(obtainedList);
+					System.out.println(sortedList);
+					System.out.println(SortOption + " is Sorted Properly");	
+				}
+				else {
+					System.out.println(obtainedList);
+					System.out.println(sortedList);
+					LogLog.error("Not Sorted Properly");
+				}
+			}
+			
+			if(SortOption.equalsIgnoreCase("Price (High-Low)")) {
+			Collections.sort(sortedList, Collections.reverseOrder());
+			if(obtainedList.equals(sortedList)) {
+				System.out.println(obtainedList);
+				System.out.println(sortedList);
+				System.out.println(SortOption + " is Sorted Properly");		
+			}
+			else {
+				System.out.println(obtainedList);
+				System.out.println(sortedList);
+				LogLog.error("Not Sorted Properly");
+			}
+				
+		}
+		
+		
+		
+		
 
 	}
 
 	@Override
 	public void VerifySortResultsPerDay(String SortOption) {
-		ArrayList<String> obtainedList = new ArrayList<>();
-		ArrayList<String> obtainedList1 = new ArrayList<>();
 
-		// String testPrice = "//div[@class='act-rating']/*/span";
-		String priceXpath = "//span[contains(@class,'trip-price-inner')]";
+		ArrayList<Integer> PriceObtainedList = new ArrayList<>();
+		ArrayList<Integer> DaysObtainedList = new ArrayList<>();
 
-		String daysXpath = "//span[@class='trip-days']";
+		String priceXpath = "//span[contains(@class,'trip-price-inner ng-binding')]";
 
-		List<WebElement> elementList = STAXDriver.findElements(By.xpath(priceXpath));
-		List<WebElement> elementList1 = STAXDriver.findElements(By.xpath(daysXpath));
+		String daysXpath = "//span[@class='trip-days ng-binding']";
+
+		List<WebElement> PriceList = STAXDriver.findElements(By.xpath(priceXpath));
+		List<WebElement> DaysList = STAXDriver.findElements(By.xpath(daysXpath));
 
 		int a = STAXDriver.findElements(By.xpath(priceXpath)).size();
 		int b = STAXDriver.findElements(By.xpath(daysXpath)).size();
 
 		System.out.println("a & b values are:" + a + "       " + b);
 
-		for (WebElement we1 : elementList) {
-			// System.out.println(we1.getText());
-			obtainedList.add(we1.getText());
-		}
-		ArrayList<String> sortedList = new ArrayList<>();
-		for (String s : obtainedList) {
-			sortedList.add(s);
-		}
-
-		for (WebElement we2 : elementList1) {
-			obtainedList1.add(we2.getText());
-
+		for (WebElement we1 : PriceList) {
+			String value = we1.getText();
+			String intValue = value.replaceAll("[^0-9]", "");
+			int Price = Integer.parseInt(intValue);
+			PriceObtainedList.add(Price);
+			//System.out.println(intValue);
 		}
 
-		System.out.println(obtainedList);
-		System.out.println(obtainedList1);
+		for (WebElement we2 : DaysList) {
+			String value = we2.getText();
+			String intValue = value.replaceAll("[^0-9]", "");
+			int Days = Integer.parseInt(intValue);
+			DaysObtainedList.add(Days);
+			//System.out.println(intValue);
+		}
 
+		//System.out.println(PriceObtainedList);
+		//System.out.println(DaysObtainedList);
 		
-		if (SortOption.equalsIgnoreCase("Price (Low-High)"))
-		{
-		for (WebElement we : elementList) {
+		ArrayList<Integer> ObtainedPricePerDay = new ArrayList<>();
+		
+		for (int x = 0; x < PriceObtainedList.size(); x++) {
 
-			String value = we.getText();
-			String Testvalue = we.findElement(By.xpath(daysXpath)).getText();
-			
-			
-		}
-		int arr1[] = null;
-		int arr2[] = null;
-		for(int x=0;x<arr1.length; x++) {
-			
-			for(int j=0;j<arr2.length; j++) {
-				int result= arr1[x]/arr2[j];
+			for (int j = 0; j < DaysObtainedList.size(); j++) {
+				if(x==j) {
+				int result = PriceObtainedList.get(x)/DaysObtainedList.get(j);
+				ObtainedPricePerDay.add(result);
+			}
 			}
 		}
 		
+		//System.out.println(ObtainedPricePerDay);
+		
+		ArrayList<Integer> sortList = new ArrayList<>();
+		for (Integer s : ObtainedPricePerDay) {
+			sortList.add(s);
 		}
+		
+		ArrayList<Integer> sortDaysList = new ArrayList<>();
+		for (Integer s : DaysObtainedList) {
+			sortDaysList.add(s);
+		}
+				
+		if(SortOption.equalsIgnoreCase("Price/Day(Low-High)")) {			
+		 Collections.sort(sortList);
+			if(ObtainedPricePerDay.equals(sortList)) {
+				System.out.println(SortOption + " is Sorted Properly");		
+			}
+			else {
+				System.out.println("The original list is : ");
+				System.out.println(ObtainedPricePerDay);
+				System.out.println("The Sorted list is : ");
+				System.out.println(sortList);
+				LogLog.error(SortOption + "Not Sorted Properly");
+			}
+		}
+		
+		if(SortOption.equalsIgnoreCase("Price/Day(High-Low)")) {
+		Collections.sort(sortList, Collections.reverseOrder());
+		if(ObtainedPricePerDay.equals(sortList)) {
+			System.out.println(SortOption + " is Sorted Properly");		
+		}
+		else {
+			System.out.println("The original list is : ");
+			System.out.println(ObtainedPricePerDay);
+			System.out.println("The Sorted list is : ");
+			System.out.println(sortList);
+			LogLog.error(SortOption + "Not Sorted Properly");
+		}
+			
+	}
+		
+		if(SortOption.equalsIgnoreCase("Duration(Lowest)")) {
+			Collections.sort(sortDaysList);
+			if(DaysObtainedList.equals(sortDaysList)) {
+				System.out.println(SortOption + " is Sorted Properly");		
+			}
+			else {
+				LogLog.error(SortOption + "Not Sorted Properly");
+			}
+		}
+
 	}
 
 	@Override

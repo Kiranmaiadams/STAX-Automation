@@ -15,7 +15,13 @@ public class ToursImpl extends TestRunner implements Tours {
 	@Override
 	public void SelectLowestPriceTour() {
 		STAXDriver.findElement(By.id("sortSelect")).sendKeys("Price (Low-High)");
-		STAXDriver.findElement(By.xpath("//*[@id=\"products\"]/div[1]/div/div[1]/a/img")).click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		STAXDriver.findElement(By.xpath("//*[@id=\"results-flex-grid\"]/div[1]/div[1]/div/a/img")).click();
 		
 		//*[@id="products"]/div[1]/div/div[1]/a/img
 	}

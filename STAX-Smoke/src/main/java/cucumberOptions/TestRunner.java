@@ -38,16 +38,16 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("useAutomationExtension", false);
-		//options.addArguments("--headless");
+		options.addArguments("--headless");
 		STAXDriver = new ChromeDriver(options);
 		STAXDriver.manage().window().maximize();
 		STAXDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		url = Application;
 
-		InputStream input = new FileInputStream("utilities.properties");
+		//InputStream input = new FileInputStream("utilities.properties");
 		
-		//InputStream input = new FileInputStream("UtilitiesProd.properties");
+		InputStream input = new FileInputStream("UtilitiesProd.properties");
 
 		Properties prop = new Properties();
 
@@ -202,7 +202,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	
 	@AfterTest
 	public void tearDown() {
-		//STAXDriver.quit();
+		STAXDriver.quit();
 	}
 
 }

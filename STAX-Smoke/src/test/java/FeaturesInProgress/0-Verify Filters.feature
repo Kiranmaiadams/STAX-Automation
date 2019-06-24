@@ -7,3 +7,4 @@ Then Lowest price tour should be adjusted
 And Highest price tour should be adjusted
 Given User Selects the Tours with Promotions
 Then Only Tours with Promotions are displayed
+And Click on Reset Filters

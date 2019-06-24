@@ -18,6 +18,8 @@ public interface HomeLeft {
 	
 	public void VerifyHighestPriceAccordingToSlider();
 	
+	public void ClickOnResetFilters();
+	
 	
 	
 	

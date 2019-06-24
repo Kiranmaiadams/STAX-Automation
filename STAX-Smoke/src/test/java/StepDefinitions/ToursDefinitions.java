@@ -17,4 +17,9 @@ public class ToursDefinitions {
 	        Thread.sleep(5000);
 	        Tour.SelectLowestPriceTour();
 	    }
+	 
+	 @And("^Select the Highest Price Tour$")
+	    public void select_the_highest_price_tour() throws Throwable {
+	        
+	    }
 }
