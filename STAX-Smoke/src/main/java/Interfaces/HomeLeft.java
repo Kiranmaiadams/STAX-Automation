@@ -20,6 +20,8 @@ public interface HomeLeft {
 	
 	public void ClickOnResetFilters();
 	
+	public void selectFourthMonthFromNow();
+	
 	
 	
 	

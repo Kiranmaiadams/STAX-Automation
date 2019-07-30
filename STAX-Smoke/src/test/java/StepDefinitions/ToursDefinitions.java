@@ -20,6 +20,7 @@ public class ToursDefinitions {
 	 
 	 @And("^Select the Highest Price Tour$")
 	    public void select_the_highest_price_tour() throws Throwable {
-	        
+	     Thread.sleep(5000);
+		 Tour.SelectHighestPriceTour();
 	    }
 }

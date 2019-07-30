@@ -16,4 +16,3 @@ Examples:
 |Price/Day(High-Low)|
 |Duration(Lowest)|
 
-

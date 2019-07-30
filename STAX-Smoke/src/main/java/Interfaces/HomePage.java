@@ -19,4 +19,8 @@ public interface HomePage {
 	public void userSearchesonAutoSearch(String SearchString);
 	
 	public void userSearchesCountryFromAutoSearch(String Country);
+	
+	public void UserScrollTillTheResetButtonIsFound() throws InterruptedException;
+	
+	public void VerifyCountOfTours();
 }

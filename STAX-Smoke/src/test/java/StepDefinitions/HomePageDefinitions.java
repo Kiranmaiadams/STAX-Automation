@@ -47,24 +47,23 @@ public class HomePageDefinitions {
 		Thread.sleep(3000);
 		HomeL.VerifyHighestPriceAccordingToSlider();
 	}
-	
-	
-	@Given("^User Selects the Tours with Promotions$")
-    public void user_selects_the_tours_with_promotions() throws Throwable {
-        HomeL.SelectToursWithPromotions();
-        Thread.sleep(2000);
-    }
-	
-	@And("^Click on Reset Filters$")
-    public void click_on_reset_filters() throws Throwable {
-        HomeL.ClickOnResetFilters();
-        Thread.sleep(8000);
-    }
 
-    @Then("^Only Tours with Promotions are displayed$")
-    public void only_tours_with_promotions_are_displayed() throws Throwable {
-        HomeL.VerifyToursWithPromotionsCount();
-    }
+	@Given("^User Selects the Tours with Promotions$")
+	public void user_selects_the_tours_with_promotions() throws Throwable {
+		HomeL.SelectToursWithPromotions();
+		Thread.sleep(2000);
+	}
+
+	@And("^Click on Reset Filters$")
+	public void click_on_reset_filters() throws Throwable {
+		HomeL.ClickOnResetFilters();
+		Thread.sleep(8000);
+	}
+
+	@Then("^Only Tours with Promotions are displayed$")
+	public void only_tours_with_promotions_are_displayed() throws Throwable {
+		HomeL.VerifyToursWithPromotionsCount();
+	}
 
 	@Given("^User selects the (.+)$")
 	public void user_selects_the(String sortoption) throws Throwable {
@@ -76,11 +75,10 @@ public class HomePageDefinitions {
 	@Then("^Verify the Results for (.+)$")
 	public void verify_the_results_for(String sortoption) throws Throwable {
 		Thread.sleep(3000);
-		if(sortoption.equalsIgnoreCase("Price (Low-High)")||sortoption.equalsIgnoreCase("Price (High-Low)")) {
-		Home.VerifySortResults(sortoption);
-		}
-		else {
-		Home.VerifySortResultsPerDay(sortoption);
+		if (sortoption.equalsIgnoreCase("Price (Low-High)") || sortoption.equalsIgnoreCase("Price (High-Low)")) {
+			Home.VerifySortResults(sortoption);
+		} else {
+			Home.VerifySortResultsPerDay(sortoption);
 		}
 	}
 
@@ -96,7 +94,10 @@ public class HomePageDefinitions {
 
 	@Then("^User should be able to see all the Results after clicking on it$")
 	public void user_should_be_able_to_see_all_the_results_after_clicking_on_it() throws Throwable {
+		Thread.sleep(2000);
 		Home.VerifyViewMoreResults();
+		System.out.println("Completed test case");
+		Thread.sleep(7000);
 	}
 
 	@When("^User clicks on Reset$")
@@ -117,15 +118,18 @@ public class HomePageDefinitions {
 		// Thread.sleep(20000);
 
 	}
-	
 
-    @Given("^User clicks on Reset Filter$")
-    public void user_clicks_on_reset_filter() throws Throwable {
-       
-    }
-	
-	
-	
+	@Given("^User clicks on Reset Filter$")
+	public void user_clicks_on_reset_filter() throws Throwable {
+		Thread.sleep(3000);
+		// HomeL.ClickOnResetFilters();
+	}
+
+	@And("^Selects the departure month as three months from now in filters$")
+	public void selects_the_departure_month_as_three_months_from_now_in_filters() throws Throwable {
+		Thread.sleep(3000);
+		HomeL.selectFourthMonthFromNow();
+	}
 
 	@And("^navigate to Previous Page$")
 	public void navigate_to_previous_page() throws Throwable {
@@ -138,4 +142,20 @@ public class HomePageDefinitions {
 		Thread.sleep(5000);
 		Home.userSearchesCountryFromAutoSearch(country);
 	}
+
+	@Given("^User Scrolls the page till Reset button is found$")
+	public void user_scrolls_the_page_till_reset_button_is_found() throws Throwable {
+		// Home.UserScrollTillTheResetButtonIsFound();
+	}
+
+	@Given("^User is in home page$")
+	public void user_is_in_home_page() throws Throwable {
+
+	}
+
+	@Then("^Tours should displayed correctly$")
+	public void tours_should_displayed_correctly() throws Throwable {
+		Home.VerifyCountOfTours();
+	}
+
 }

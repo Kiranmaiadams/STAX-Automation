@@ -3,23 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Implementations.HomeLeftImpl">
+      <class name="Implementations.HomePageImpl">
         <methods>
-          <include name="VerifyTourPromotionsContent"/>
-          <include name="Test"/>
-          <include name="feature"/>
-          <include name="SelectToursWithPromotions"/>
-          <include name="VerifyHighestPriceAccordingToSlider"/>
-          <include name="MovePriceSliderToRight"/>
-          <include name="VerifyLowestPriceAccordingToSlider"/>
+          <include name="userSearchesCountryFromAutoSearch"/>
           <include name="setUpClass"/>
-          <include name="VerifyToursWithPromotionsCount"/>
-          <include name="SetPricePerTrip"/>
+          <include name="Test"/>
           <include name="tearDownClass"/>
           <include name="tearDown"/>
-          <include name="MovePriceSliderToLeft"/>
         </methods>
-      </class> <!-- Implementations.HomeLeftImpl -->
+      </class> <!-- Implementations.HomePageImpl -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,5 +6,7 @@ public interface Tours {
 	
 	public void SelectRandomTour();
 	
+	public void SelectHighestPriceTour();
 	
+	public void ClickNeedMoreTimeRB();
 }

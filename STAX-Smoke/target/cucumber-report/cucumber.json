@@ -3,276 +3,6 @@
     "line": 1,
     "elements": [
       {
-        "line": 13,
-        "name": "User Verifies if the ort order is displayed properly Price (Low-High)",
-        "description": "",
-        "id": "user-verifies-the-sort-order-functionality;user-verifies-if-the-ort-order-is-displayed-properly-\u003csort-option\u003e;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 26320500520,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the Price (Low-High)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (Low-High)",
-                  "offset": 17
-                }
-              ],
-              "location": "HomePageDefinitions.user_selects_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3651831073,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify the Results for Price (Low-High)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (Low-High)",
-                  "offset": 23
-                }
-              ],
-              "location": "HomePageDefinitions.verify_the_results_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "User Verifies if the ort order is displayed properly Price (High-Low)",
-        "description": "",
-        "id": "user-verifies-the-sort-order-functionality;user-verifies-if-the-ort-order-is-displayed-properly-\u003csort-option\u003e;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 26246229198,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the Price (High-Low)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (High-Low)",
-                  "offset": 17
-                }
-              ],
-              "location": "HomePageDefinitions.user_selects_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3538641575,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify the Results for Price (High-Low)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price (High-Low)",
-                  "offset": 23
-                }
-              ],
-              "location": "HomePageDefinitions.verify_the_results_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 15,
-        "name": "User Verifies if the ort order is displayed properly Price/Day(Low-High)",
-        "description": "",
-        "id": "user-verifies-the-sort-order-functionality;user-verifies-if-the-ort-order-is-displayed-properly-\u003csort-option\u003e;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 26182892572,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the Price/Day(Low-High)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price/Day(Low-High)",
-                  "offset": 17
-                }
-              ],
-              "location": "HomePageDefinitions.user_selects_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4034217919,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify the Results for Price/Day(Low-High)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price/Day(Low-High)",
-                  "offset": 23
-                }
-              ],
-              "location": "HomePageDefinitions.verify_the_results_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 16,
-        "name": "User Verifies if the ort order is displayed properly Price/Day(High-Low)",
-        "description": "",
-        "id": "user-verifies-the-sort-order-functionality;user-verifies-if-the-ort-order-is-displayed-properly-\u003csort-option\u003e;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 26140175968,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the Price/Day(High-Low)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price/Day(High-Low)",
-                  "offset": 17
-                }
-              ],
-              "location": "HomePageDefinitions.user_selects_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3902181432,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify the Results for Price/Day(High-Low)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price/Day(High-Low)",
-                  "offset": 23
-                }
-              ],
-              "location": "HomePageDefinitions.verify_the_results_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 17,
-        "name": "User Verifies if the ort order is displayed properly Duration(Lowest)",
-        "description": "",
-        "id": "user-verifies-the-sort-order-functionality;user-verifies-if-the-ort-order-is-displayed-properly-\u003csort-option\u003e;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 26294943565,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the Duration(Lowest)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Duration(Lowest)",
-                  "offset": 17
-                }
-              ],
-              "location": "HomePageDefinitions.user_selects_the(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4100472652,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Verify the Results for Duration(Lowest)",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Duration(Lowest)",
-                  "offset": 23
-                }
-              ],
-              "location": "HomePageDefinitions.verify_the_results_for(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "User Verifies the Sort Order Functionality",
-    "description": "",
-    "id": "user-verifies-the-sort-order-functionality",
-    "keyword": "Feature",
-    "uri": "3-Sort Order Test.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
         "line": 3,
         "name": "Verify email is functionality",
         "description": "",
@@ -282,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7359486892,
+              "duration": 7299326305,
               "status": "passed"
             },
             "line": 5,
@@ -294,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 6772878529,
+              "duration": 6446674700,
               "status": "passed"
             },
             "line": 6,
@@ -306,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 514311013,
+              "duration": 320771588,
               "status": "passed"
             },
             "line": 7,
@@ -318,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 141841062,
+              "duration": 68645184,
               "status": "passed"
             },
             "line": 8,
@@ -330,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 15316,
+              "duration": 12399,
               "status": "passed"
             },
             "line": 9,
@@ -347,6 +77,6 @@
     "description": "",
     "id": "verify-email-us-functionality",
     "keyword": "Feature",
-    "uri": "4-Email Us.feature"
+    "uri": "src/test/java/BookingsWithoutPayment/4-Email Us.feature"
   }
 ]

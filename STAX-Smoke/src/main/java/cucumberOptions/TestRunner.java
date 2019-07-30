@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -21,13 +22,12 @@ import cucumber.api.java.Before;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @Test(threadPoolSize = 100)
-@CucumberOptions(features = "src/test/java/TestCaseResources", glue = "StepDefinitions", plugin = {
+@CucumberOptions(features = "src/test/java/BookingsWithoutPayment/4-Email Us.feature", glue = "StepDefinitions", plugin = {
 		"pretty",  "json:target/cucumber-report/cucumber.json" })
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 	public static WebDriver STAXDriver = null;
-
 	public static String url;
 
 	@BeforeTest(alwaysRun=true)
@@ -45,9 +45,9 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 		url = Application;
 
-		//InputStream input = new FileInputStream("utilities.properties");
+		InputStream input = new FileInputStream("utilities.properties");
 		
-		InputStream input = new FileInputStream("UtilitiesProd.properties");
+		//InputStream input = new FileInputStream("UtilitiesProd.properties");
 
 		Properties prop = new Properties();
 
@@ -198,6 +198,8 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 		}
 	}
 
+	
+	
 	
 	
 	@AfterTest

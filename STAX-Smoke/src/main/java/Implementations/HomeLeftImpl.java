@@ -124,4 +124,12 @@ public class HomeLeftImpl extends TestRunner implements HomeLeft {
 		
 	}
 
+	@Override
+	public void selectFourthMonthFromNow() {
+		STAXDriver.findElement(By.xpath("//*[@id=\"frmDepDate\"]/div[4]/label/span[2]")).click();
+
+		
+		
+	}
+
 }
